@@ -69,7 +69,7 @@ response = requests.get(
     params={
         "query": "https://www.thomasnet.com/company/zepole-supply-co-20088400/profile",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -375,7 +375,7 @@ response = requests.get(
     params={
         "query": "https://www.thomasnet.com/suppliers/search?searchterm=Table+Forks",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
